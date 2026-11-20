@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kurdistan Force — Kurdish forces digital historical archive">
+  <title>KURDISTAN FORCE | Digital Archive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Kurdistan Force home">
+      <span class="brand-mark">☀</span><span>KURDISTAN <b>FORCE</b></span>
+    </a>
+    <nav class="main-nav">
+      <a href="#regions" data-i18n="navRegions">پارچەکانی کوردستان</a>
+      <a href="#archive" data-i18n="navArchive">ئەرشیف</a>
+      <a href="#about" data-i18n="navAbout">دەربارە</a>
+    </nav>
+    <div class="language-switch" aria-label="Language">
+      <button class="lang active" data-lang="ku">کوردی</button>
+      <button class="lang" data-lang="ar">العربية</button>
+      <button class="lang" data-lang="en">English</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="assets/kurdistan-hero.png" alt="وێنەیەکی هونەری لە شاخەکانی کوردستان و ئاڵای کوردستان">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="eyebrow" data-i18n="eyebrow">ئەرشیفی دیجیتاڵی مێژوو و کەلتووری کوردی</div>
+        <div class="sun-symbol">☀</div>
+        <h1>KURDISTAN <span>FORCE</span></h1>
+        <p class="hero-subtitle" data-i18n="tagline">مێژوو · میرات · بەڵگەنامە</p>
+        <p class="hero-copy" data-i18n="heroCopy">شوێنێک بۆ پاراستن و ناساندنی مێژووی هێزە کوردییەکان، بە پشتبەستن بە سەرچاوەی باوەڕپێکراو.</p>
+        <a class="primary-btn" href="#regions" data-i18n="explore">دەستپێکردنی گەشت</a>
+      </div>
+      <div class="hero-note" data-i18n="heroNote">ئەرشیفێکی مێژوویی و زانیاریی گشتی</div>
+    </section>
+
+    <section class="section regions-section" id="regions">
+      <div class="section-heading">
+        <span class="kicker" data-i18n="kickerRegions">چوار ناوچە · یەک میرات</span>
+        <h2 data-i18n="regionsTitle">پارچەکانی کوردستان</h2>
+        <p data-i18n="regionsCopy">ناوچەیەک هەڵبژێرە بۆ بینینی بابەت و ئەرشیفی پەیوەندیدار.</p>
+      </div>
+      <div class="region-grid">
+        <a class="region-card" href="#archive"><span class="region-number">01</span><span class="region-icon">◈</span><h3 data-i18n="south">باشوور</h3><p data-i18n="southDesc">کوردستانی باشوور</p><span class="card-arrow">←</span></a>
+        <a class="region-card" href="#archive"><span class="region-number">02</span><span class="region-icon">◈</span><h3 data-i18n="north">باکوور</h3><p data-i18n="northDesc">کوردستانی باکوور</p><span class="card-arrow">←</span></a>
+        <a class="region-card" href="#archive"><span class="region-number">03</span><span class="region-icon">◈</span><h3 data-i18n="east">ڕۆژهەڵات</h3><p data-i18n="eastDesc">کوردستانی ڕۆژهەڵات</p><span class="card-arrow">←</span></a>
+        <a class="region-card" href="#archive"><span class="region-number">04</span><span class="region-icon">◈</span><h3 data-i18n="west">ڕۆژئاوا</h3><p data-i18n="westDesc">کوردستانی ڕۆژئاوا</p><span class="card-arrow">←</span></a>
+      </div>
+    </section>
+
+    <section class="section archive-section" id="archive">
+      <div class="section-heading">
+        <span class="kicker" data-i18n="kickerArchive">ئەرشیفی گشتی</span>
+        <h2 data-i18n="archiveTitle">لە ئەرشیفەکەدا بگەڕێ</h2>
+        <p data-i18n="archiveCopy">بە ناوی بابەت یان جۆری ئەرشیف بگەڕێ. نموونەکان لەم وەشانەدا تەنها بۆ پیشاندانی شێوازی ماڵپەڕن.</p>
+      </div>
+      <label class="search-box">
+        <span>⌕</span>
+        <input id="archiveSearch" type="search" placeholder="گەڕان بە ناو، ساڵ یان بابەت..." data-i18n-placeholder="searchPlaceholder">
+      </label>
+      <div class="archive-grid" id="archiveGrid">
+        <article class="archive-card" data-search="مێژوو historical history timeline">
+          <div class="archive-icon">▤</div><span class="tag" data-i18n="historyTag">مێژوو</span>
+          <h3 data-i18n="historyTitle">ڕووداوە مێژووییەکان</h3><p data-i18n="historyDesc">تایم‌لاین و تۆمارە مێژووییەکان بە ساڵ و سەرچاوە.</p>
+        </article>
+        <article class="archive-card" data-search="هێز force groups organizations">
+          <div class="archive-icon">◇</div><span class="tag" data-i18n="forcesTag">هێزەکان</span>
+          <h3 data-i18n="forcesTitle">ناسنامەی هێزەکان</h3><p data-i18n="forcesDesc">زانیاریی گشتی، مێژووی دامەزراندن و سەرچاوەی بەردەست.</p>
+        </article>
+        <article class="archive-card" data-search="فەرماندە leaders biographies">
+          <div class="archive-icon">♙</div><span class="tag" data-i18n="leadersTag">کەسایەتی</span>
+          <h3 data-i18n="leadersTitle">فەرماندە و کەسایەتییەکان</h3><p data-i18n="leadersDesc">ژیاننامە و بەشداریی کەسایەتییە مێژووییەکان.</p>
+        </article>
+        <article class="archive-card" data-search="وێنە بەڵگەنامە documents photos media">
+          <div class="archive-icon">▧</div><span class="tag" data-i18n="mediaTag">میدیا</span>
+          <h3 data-i18n="mediaTitle">وێنە و بەڵگەنامە</h3><p data-i18n="mediaDesc">کۆمەڵە وێنە و بەڵگەنامەی مێژوویی بە زانیاریی سەرچاوە.</p>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden data-i18n="empty">هیچ ئەنجامێک نەدۆزرایەوە.</p>
+      <div class="notice"><strong data-i18n="noteTitle">تێبینی:</strong> <span data-i18n="noteCopy">پڕۆفایل و زانیارییەکان پێویستیان بە پشتڕاستکردنەوە و دانانی سەرچاوە هەیە. ئەم نموونەیە هێشتا داتابەیس یان ناوەڕۆکی پشتڕاستکراوی تێدا نییە.</span></div>
+    </section>
+
+    <section class="about-band" id="about">
+      <div><span class="kicker" data-i18n="aboutKicker">ئامانج</span><h2 data-i18n="aboutTitle">پاراستنی مێژوو بە زانیاریی دروست</h2></div>
+      <p data-i18n="aboutCopy">Kurdistan Force ئەرشیفێکی گشتیی دیجیتاڵییە بۆ کۆکردنەوە و ڕێکخستنی زانیاریی مێژوویی. هەر بابەتێک دەبێت سەرچاوەی دیاریکراوی هەبێت و جیاوازی نێوان زانیاریی پشتڕاستکراو و ڕاپۆرتی پشتڕاستنەکراو ڕوون بکرێتەوە.</p>
+    </section>
+  </main>
+
+  <footer><span class="brand"><span class="brand-mark">☀</span>KURDISTAN <b>FORCE</b></span><span data-i18n="footer">ئەرشیفی دیجیتاڵی مێژووی کوردی · وەشانی نموونە</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
